@@ -1,0 +1,76 @@
+embedding_size: 64
+learning_rate_scheduler: [0.96, 50]
+learning_rate: 0.001
+reg_weight_1: 1e-05
+knn_k: 10
+n_ui_layers: 3
+bm_loss: 0.01
+reg_weight_2: 0.1
+decay_weight: [0.9, 0.95, 0.99]
+decay_base: [0.8, 0.9, 0.95]
+
+decay_weight2: [0.95]
+decay_base2: [0.9]
+
+# baby
+n_layers: 2
+bm_temp: 0.4
+um_temp: 0.1
+vt_temp: 15
+um_loss: 0.01
+vt_loss: 0.1
+sim_weight: 0.1
+rho: 0.97
+ui_rate: 0.2
+# vt_loss: [0.1,0.01,0.001,0.0001,0.00001]
+# um_loss: [0.1,0.01,0.001,0.0001,0.00001]
+# ui_rate: [0,0.05,0.1,0.15,0.2]
+P_ui: True
+conv: ['default', 'image', 'text']
+
+
+# sports
+# n_layers: 1
+# bm_temp: 0.2
+# um_loss: [0.1,0.01,0.001,0.0001,0.00001]
+# um_temp: 0.1
+# vt_loss: [0.1,0.01,0.001,0.0001,0.00001]
+# vt_temp: 100
+# sim_weight: 0
+# rho: 1
+# ui_rate: 0.2
+# # ui_rate: [0,0.05,0.1,0.15,0.2]
+# P_ui: False
+# conv: ['default', 'default', 'default']
+# a_1: []
+# a_2: []
+
+# clothing
+# n_layers: 1
+# bm_temp: 0.2
+# um_loss: 0.1
+# um_temp: 0.2
+# vt_loss: 0.001
+# vt_temp: 15
+# conv: ['default', 'image', 'text']
+
+# elec
+# n_layers: 1
+# bm_temp: 0.2
+# um_loss: 0.1
+# um_temp: 0.2
+# vt_loss: 0.1
+# vt_temp: 10
+# sim_weight: 0
+# rho: 1
+# n_ui_layers: 5
+# ui_rate: 0.05
+# P_ui: False
+# conv: ['default', 'default', 'default']
+
+# 图净化相关参数
+purification_method: 'noise_detection'  # 可选: hierarchical, diffusion, semantic, noise_detection
+purification_rho: 0.1
+
+
+
