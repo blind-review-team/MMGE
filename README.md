@@ -24,7 +24,7 @@ Download from Google Drive: [Baby/Sports/Electronics](https://drive.google.com/f
   python main.py
   ```
 ## Performance Comparison
-<img src="image/result.png" width="900px" height="380px"/>
+<img src="image/result.png"/>
 
 
 
